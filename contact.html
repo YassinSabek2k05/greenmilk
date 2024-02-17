@@ -4,81 +4,98 @@
 <head>
     <meta charset="utf-8" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="stlylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section id="contact">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img width="75"src="img/logo.png"/></label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a class="active" href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <center>
+        <section id="contact">
 
-        <h1 class="section-header">Contact</h1>
+            <h1 class="section-header">Contact</h1>
 
-        <div class="contact-wrapper">
+            <div class="contact-wrapper">
 
-            <!-- Left contact page -->
+                <!-- Left contact page -->
 
-            <form id="contact-form" class="form-horizontal" role="form">
+                <form id="contact-form" class="form-horizontal" role="form">
 
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                        </div>
                     </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                        </div>
+                    </div>
+
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                        <div class="alt-send-button">
+                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                        </div>
+
+                    </button>
+
+                </form>
+                <!-- Left contact page -->
+
+                <div class="direct-contact-container">
+
+                    <ul class="contact-list">
+                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href="https://maps.app.goo.gl/idrbbE149DZ8PB2E7" title="Give me a call">Location</a></span></i></li>
+
+                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:201115533325" title="Give me a call">+201115533325</a></span></i></li>
+
+                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:greenmilkdairy@gmail.com" title="Send me an email">greenmilkdairy@gmail.com</a></span></i></li>
+
+                    </ul>
+
+                    <hr>
+                    <ul class="social-media-list">
+                        <li onclick="location.href='https://www.facebook.com/greenmilkdairy/';">
+                            <a href="#" target="_blank" class="contact-icon">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li onclick="location.href='https://wa.me/201115533325';">
+                            <a href="#" target="_blank" class="contact-icon">
+                                <i class="fa fa-whatsapp " aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li onclick="location.href='https://www.instagram.com/greenmilkdairy/?igshid=ZDc4ODBmNjlmNQ%3D%3D';">
+                            <a href="#" target="_blank" class="contact-icon">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+
                 </div>
 
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                    </div>
-                </div>
+            </div>
 
-                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-
-                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                    <div class="alt-send-button">
-                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                    </div>
-
-                </button>
-
-            </form>
-            <!-- Left contact page -->
-
-            <div class="direct-contact-container">
-
-                <ul class="contact-list">
-                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href="https://maps.app.goo.gl/idrbbE149DZ8PB2E7" title="Give me a call">Location</a></span></i></li>
-
-                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:201115533325" title="Give me a call">+201115533325</a></span></i></li>
-
-                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:greenmilkdairy@gmail.com" title="Send me an email">greenmilkdairy@gmail.com</a></span></i></li>
-
-                </ul>
-
-                <hr>
-                <ul class="social-media-list">
-                    <li onclick="location.href='https://www.facebook.com/greenmilkdairy/';">
-                        <a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li onclick="location.href='https://wa.me/201115533325';">
-                        <a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-whatsapp " aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li  onclick="location.href='https://www.instagram.com/greenmilkdairy/?igshid=ZDc4ODBmNjlmNQ%3D%3D';">
-                        <a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-                <hr>
-
-              </div>
-
-        </div>
-
-    </section>
-
+        </section>
+    </center>
 
 </body>
 
